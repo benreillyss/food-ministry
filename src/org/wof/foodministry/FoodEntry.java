@@ -28,5 +28,29 @@ public class FoodEntry {
     
     public void setDay ( String day ) {
         this.day = day;
-    } 
+    }
+    public int getweight() {
+	return weight;
+    }
+    public void setweight ( int weight ) {
+        this.weight = weight;
+    }
+    public int getDate () {
+	return date;
+    }
+    public void setDate ( int date ) {
+        this.date = date;
+    }
+    public String getTime() {
+	return Time;
+    }
+    public void setTime() {
+        this.Time =Time;
+    }
+    public String getLocation() {
+        return Location;
+    }
+    public void setLocation() {
+        this.Location = Location;
+    }
 }
