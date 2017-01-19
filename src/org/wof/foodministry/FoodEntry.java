@@ -1,20 +1,23 @@
 package org.wof.foodministry;
 
+import java.util.Date;
+
 public class FoodEntry {
 	// TODO
     // Research and see if there is a class or a better method for getting
     // exact or automatic day, date, or time information using existing
     // Java classes
-    String day;
-	String time;
+    
+	Date date;
 	int weight;
 	int waste;
-	
-	FoodEntry(String day, String time, int weight, int waste) {
-		this.day = day;
-		this.time = time;
+	String location;
+
+	FoodEntry( int weight, int waste, String location) {
+		this.date = new Date();
 		this.weight = weight;
 		this.waste = waste;
+		this.location = location;
 	}
     
     // TODO
@@ -22,11 +25,38 @@ public class FoodEntry {
     // the FoodEntry class
     
     // for example
-    public String getDay() {
-        return name;
-    }
     
-    public void setDay ( String day ) {
-        this.day = day;
-    } 
+    public int getWeight() {
+		return weight;
+	 }
+	 public void setWeight ( int weight ) {
+		   this.weight = weight;
+	 }
+	 public Date getDate() {
+		 return this.date;
+	 }
+	 public void setDate (Date date) {
+		 this.date = date;
+	 }
+	 public String getLocation() {
+		 return location;
+	 }
+	 public void setLocation(String location) {
+		 this.location = location;
+	 }
+	 public int getWaste() {
+		 return waste;
+	 }
+	 public void setWaste(int waste) {
+		 this.waste = waste;
+	 }    
+	 public void generateDailyReport(){
+			System.out.println(date.toString());
+			System.out.println("The Location of Pickup is: " + this.location);
+			System.out.println("Load weight of  Pickup is: " + this.weight);
+			System.out.println("Waste after the pickup: " + this.waste);
+
+     };
+    
+    
 }
