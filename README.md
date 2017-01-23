@@ -1,0 +1,1 @@
+You can use `./gradlew run` or `gradlew.bat run` to run the application without an IDE.

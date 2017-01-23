@@ -13,7 +13,7 @@ public class FoodEntry {
 	int waste;
 	String location;
 
-	FoodEntry( int weight, int waste, String location) {
+	public FoodEntry( int weight, int waste, String location) {
 		this.date = new Date();
 		this.weight = weight;
 		this.waste = waste;
